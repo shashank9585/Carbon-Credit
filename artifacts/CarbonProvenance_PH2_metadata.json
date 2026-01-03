@@ -1,0 +1,224 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_land",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_vintage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pdfLink",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tons",
+						"type": "uint256"
+					}
+				],
+				"name": "createCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"name": "getHistory",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "ledger",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "creditId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "landId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "vintage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataLink",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tons",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "currentOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRetired",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "statusNote",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "researcher",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_note",
+						"type": "string"
+					}
+				],
+				"name": "retireCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transferCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newTons",
+						"type": "uint256"
+					}
+				],
+				"name": "updateUtility",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CarbonIntegrity.sol": "CarbonProvenance_PH2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CarbonIntegrity.sol": {
+			"keccak256": "0x0ae28c86da0af071c8151f69fca9fc228a131801359b42e3de93d09b6f9556cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aea501c1a9c7cdd4bc445e7f61fa3efbe791652b1dad22c8637e99e80194fa6a",
+				"dweb:/ipfs/QmcTQzYhws6rU2C4ZqkVdgjK2yG53ARme4A5toikq34qFf"
+			]
+		}
+	},
+	"version": 1
+}
