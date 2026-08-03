@@ -1,0 +1,281 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "currentTons",
+						"type": "uint256"
+					}
+				],
+				"name": "TransactionUpdate",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_land",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_vintage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pdf",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tons",
+						"type": "uint256"
+					}
+				],
+				"name": "createCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"name": "getHistory",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddr",
+						"type": "address"
+					}
+				],
+				"name": "linkToQIEDEX",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "qieDexTokenAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "researcher",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_note",
+						"type": "string"
+					}
+				],
+				"name": "retireCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transferCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newTons",
+						"type": "uint256"
+					}
+				],
+				"name": "updateUtility",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"name": "viewFullDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Land_Anchor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Vintage_Year",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Evidence_Link",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Remaining_Tons",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "Current_Owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "Is_Retired",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "Status_Note",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CarbonIntegrity.sol": "CarbonProvenance_Final_PH2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CarbonIntegrity.sol": {
+			"keccak256": "0x2020f39541ec4ab63923b7d23453c3facd06a53785946bd49bc473b9aeeddbdf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b98c5b94859d82074bb52f739b0dc3e03c5d2493042676af4d7250d0925f48aa",
+				"dweb:/ipfs/Qmc8YffYxRzWLhAyoq1KvoS5JF9hmNajHsfwYiSkSyeiqq"
+			]
+		}
+	},
+	"version": 1
+}

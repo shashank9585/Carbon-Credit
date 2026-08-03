@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CarbonIntegrity.sol": "IQIE20"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CarbonIntegrity.sol": {
+			"keccak256": "0x2020f39541ec4ab63923b7d23453c3facd06a53785946bd49bc473b9aeeddbdf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b98c5b94859d82074bb52f739b0dc3e03c5d2493042676af4d7250d0925f48aa",
+				"dweb:/ipfs/Qmc8YffYxRzWLhAyoq1KvoS5JF9hmNajHsfwYiSkSyeiqq"
+			]
+		}
+	},
+	"version": 1
+}

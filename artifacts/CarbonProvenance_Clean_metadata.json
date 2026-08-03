@@ -1,0 +1,208 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "currentTons",
+						"type": "uint256"
+					}
+				],
+				"name": "TransactionUpdate",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_land",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_vintage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pdf",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tons",
+						"type": "uint256"
+					}
+				],
+				"name": "createCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "researcher",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_note",
+						"type": "string"
+					}
+				],
+				"name": "retireCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transferCredit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"name": "viewCreditDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Land",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "RemainingTons",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "Owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "Retired",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "Note",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CarbonIntegrity.sol": "CarbonProvenance_Clean"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CarbonIntegrity.sol": {
+			"keccak256": "0xa76d74544e43d139e57002186a7d8a41e3d292b6e63d1f4c7a8755df908b2373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f242a0e98cb808e77a9917b3c168986db0044213a3bea5b06583012fab5e5089",
+				"dweb:/ipfs/QmSRVoJjdzgfuCzGcasSvsTdUJntnxhfLJL1yoFLHmm6sc"
+			]
+		}
+	},
+	"version": 1
+}
